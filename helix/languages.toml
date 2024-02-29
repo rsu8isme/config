@@ -1,0 +1,45 @@
+[language-server.gpt]
+command = "helix-gpt"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.ruff]
+command = "ruff-lsp"
+config = {}
+
+[language-server.pylyzer]
+command = "pylyzer"
+args = ["--server"]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[[language]]
+name = "python"
+roots = ["pyproject.toml", "pyrightconfig.json"]
+language-servers = ["pyright", "gpt"]
+auto-format = true
+formatter = { command = "bash", args = [
+  "-c",
+  "ruff check - --fix -n | ruff format -",
+] }
+
+[[language]]
+name = "toml"
+auto-format = true
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "rust"
+auto-format = true
+roots = ["Cargo.toml", "Cargo.lock"]
+language-servers = ["rust-analyzer"]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'

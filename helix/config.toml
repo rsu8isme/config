@@ -1,0 +1,20 @@
+theme = "monokai_aqua"
+
+[editor]
+idle-timeout = 0
+mouse = false
+auto-completion = true
+[editor.file-picker]
+git-ignore = false
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+[editor.lsp]
+display-inlay-hints = true
+# enable = true
+auto-signature-help = true
+# display-messages = true
+
+[keys.insert]
+j = { k = "normal_mode" }

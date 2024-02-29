@@ -1,0 +1,11 @@
+{
+  "venvPath": "/home/rsu8/.cache/pypoetry/virtualenvs",
+  "venv": "venv_dir",
+  "reportDeprecated": "warning",
+  "reportOptionalMemberAccess": false,
+  "reportGeneralTypeIssues": false,
+  "reportOptionalSubscript": false,
+  "reportPrivateImportUsage": false,
+  "typeCheckingMode": "off",
+  "extraPaths": ["src"]
+}

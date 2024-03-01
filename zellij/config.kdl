@@ -1,2 +1,2 @@
 default_shell "fish"
-mouse_mode false
+mouse_mode True

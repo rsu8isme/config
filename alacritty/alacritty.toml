@@ -3,3 +3,5 @@ normal = { family = "Fira Code", style = "Regular" }
 size = 16
 [shell]
 program = "/usr/bin/fish"
+[window]
+option_as_alt = "Both"

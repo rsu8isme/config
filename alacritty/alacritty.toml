@@ -1,6 +1,6 @@
 [font]
-normal = { family = "Fira Code", style = "Regular" }
-size = 16
+normal = { family = "Inconsolata", style = "Regular" }
+size = 19
 [shell]
 program = "/usr/bin/fish"
 [window]

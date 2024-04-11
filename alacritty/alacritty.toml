@@ -1,5 +1,6 @@
 [font]
 normal = { family = "Inconsolata", style = "Regular" }
+bold = { family = "Inconsolata", style = "Regular" }
 size = 19
 [shell]
 program = "/usr/bin/fish"

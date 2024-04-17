@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            "cwd": "${workspaceFolder}/src"
+        },
+        {
+            "name": "Public API",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "apps.apis.public_api.app:app",
+                "--port",
+                "8000"
+            ],
+            "consoleTitle": "public_api",
+            "jinja": true,
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            "cwd": "${workspaceFolder}/src"
+        },
+        {
+            "name": "Admin API",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "apps.apis.admin_api.app:app",
+                "--port",
+                "8080"
+            ],
+            "consoleTitle": "admin_api",
+            "jinja": true,
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            "cwd": "${workspaceFolder}/src"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+Driver name: CassandraSimba
+Class name: com.simba.cassandra.jdbc42.Driver
+URL template: jdbc:cassandra://{host}[:{port}];AuthMech=0
+Default port: 9042

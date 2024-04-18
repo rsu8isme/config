@@ -1,5 +1,5 @@
 function gclb
-    set base_branch develop
+    set base_branch $argv[1]
 
     # work from our base branch
     git checkout $base_branch

@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "venv_dir/bin/python",
+    "python.analysis.extraPaths": [
+        "src"
+    ],
+    "python.analysis.include": [
+        "src"
+    ],
+    "python.analysis.autoImportCompletions": true
+}
